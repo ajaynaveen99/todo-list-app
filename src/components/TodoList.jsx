@@ -83,6 +83,7 @@ export default function TodoList() {
 
                             <td>
                                 <input
+                                
                                     type="checkbox"
                                     checked={obj.isCompleted}
                                     onChange={(e) =>

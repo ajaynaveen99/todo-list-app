@@ -1,16 +1,57 @@
-# React + Vite
+# 📝 Todo List Application (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive Todo List application built with React. This project demonstrates CRUD operations, search functionality, edit/save flow, and controlled components using React Hooks.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
+👉 [https://todo-list-app-component.netlify.app/]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Project Overview
 
-## React Compiler
+This Todo List app allows users to:
+- Add new todo items
+- Edit existing todo descriptions
+- Mark todos as completed using a checkbox
+- Delete todos only after marking them as completed
+- Search todos by description or ID
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The project focuses on React fundamentals and clean state management.
 
-## Expanding the ESLint configuration
+## 🧩 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ✅ Add Todo
+- Users can add a new todo using the input field
+- Empty input is restricted with an alert message
+
+### ✏️ Edit & Save Todo
+- Click Edit to modify a todo description
+- Click Save to update the changes
+- Only one todo can be edited at a time
+
+### 🔍 Search Todo
+- Search todos by description text or Todo ID
+- Search updates results dynamically
+
+### ☑️ Complete Todo
+- Each todo has a checkbox
+- Checkbox marks the todo as completed
+
+### 🗑️ Delete Todo (Conditional)
+- Todo can be deleted only if marked as completed
+- Prevents accidental deletion
+
+## 🛠️ Technologies Used
+- React.js
+- JavaScript (ES6)
+- React Hooks (useState)
+- HTML & CSS
+- Netlify (Deployment)
+
+## 📂 Component Structure
+```
+src/
+├── TodoList.jsx
+├── TodoSearch.jsx
+├── App.jsx
+├── index.js
+└── styles.css
+```
